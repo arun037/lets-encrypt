@@ -6,7 +6,7 @@ eks-cluster
 
 cert-manager
 
-route-53 hosted zone
+route-53 hosted zone 
 
 ingress-nginx controller
 
@@ -28,6 +28,10 @@ kubectl get pods -n ingress-nginx
 
 kubectl get svc -n ingress-nginx
 
-step3: kubectl apply -f clusterissuer.yaml
+step 3: kubectl apply -f clusterissuer.yaml
 
-step4: 
+step 4: kubectl apply -f deploy.yaml
+
+step 5: kubectl apply -f ingress.yaml
+
+(ingress.yaml file specify the domain name of yours in the host)
